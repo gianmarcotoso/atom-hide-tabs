@@ -11,5 +11,5 @@ Because I like to have a shorcut to close all open files and I found that the on
 After installing the package just run the `atom-hide-tabs:toggle` command from the command palette or through the defined shortcut (default is `ctrl-alt-t`). If you want to run this automatically, you can add the following line to your init script:
 
 ```javascript
-atom.commands.dispatch(atom.views.getView(atom.workspace), 'package:command');
+atom.commands.dispatch(atom.views.getView(atom.workspace), 'atom-hide-tabs:toggle');
 ```
