@@ -1,7 +1,7 @@
 {
   "name": "atom-hide-tabs",
   "main": "./lib/atom-hide-tabs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Hides Atom tabs without disabling the tabs plugin",
   "author": "Gian Marco Toso <info@gianmarcotoso.com>",
   "keywords": [
