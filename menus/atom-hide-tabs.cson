@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle atom-hide-tabs'
+      'command': 'atom-hide-tabs:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom-hide-tabs'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'atom-hide-tabs:toggle'
+        }
+      ]
+    ]
+  }
+]

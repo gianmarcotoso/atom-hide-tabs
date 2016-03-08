@@ -1,0 +1,23 @@
+{
+  "name": "atom-hide-tabs",
+  "main": "./lib/atom-hide-tabs",
+  "version": "0.0.0",
+  "description": "Hides Atom tabs without disabling the tabs plugin",
+  "author": "Gian Marco Toso <info@gianmarcotoso.com>",
+  "keywords": [
+      "atom",
+      "tabs",
+      "tab-bar",
+      "hide"
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-hide-tabs:toggle"
+  },
+  "repository": "https://github.com/gianmarcotoso/atom-hide-tabs",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
