@@ -13,8 +13,5 @@ module.exports = AtomHideTabs =
   deactivate: ->
     @subscriptions.dispose()
 
-  serialize: ->
-    atomHideTabsViewState: @atomHideTabsView.serialize()
-
   toggle: ->
-    atom.views.getView(atom.workspace).querySelector('.tab-bar').classList.toggle('hide-tabs');
+    atom.views.getView(atom.workspace).querySelector('.tab-bar').classList.toggle('hide-tabs')
