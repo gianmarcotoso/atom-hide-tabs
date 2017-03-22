@@ -16,7 +16,7 @@ module.exports = AtomHideTabs =
     @subscriptions.add atom.commands.add 'atom-workspace', 'atom-hide-tabs:toggle': => @toggle()
 
     # Register callback which handles new pane
-    @subscriptions.add atom.workspace.observePanes (pane) => @handlePane pane
+    @subscriptions.add atom.workspace.observePanes (pane) => @handleNewPane pane
 
   deactivate: ->
     @subscriptions.dispose()
@@ -28,11 +28,11 @@ module.exports = AtomHideTabs =
     # Remove closed panes
     @panes = @panes.filter (pane) -> pane.alive isnt false
 
-    # Toggle class for all active panes
+    # Toggle class for all panes
     for pane in @panes
       atom.views.getView(pane).querySelector('.tab-bar').classList.toggle('hide-tabs')
 
-  handlePane: (pane) ->
+  handleNewPane: (pane) ->
     @panes.push pane
 
     # Set hide-tabs css class if tabs are hidden
