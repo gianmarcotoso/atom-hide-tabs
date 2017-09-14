@@ -1,3 +1,8 @@
+# WARNING
+## This packages is no longer maintained!
+
+I do not use Atom anymore, but I'll accept PRs that solve issues and will gladly transfer ownership to someone who wants to keep improving it.
+
 # atom-hide-tabs package
 
 Hides Atom's tab bar without disabling the tab plugin.
